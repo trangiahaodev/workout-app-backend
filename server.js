@@ -32,7 +32,7 @@ const swaggerOptions = {
         description: "Development Server",
       },
       {
-        url: "https://<tên-app-của-bạn>.onrender.com",
+        url: `${process.env.RENDER_URI}`,
         description: "Production Server",
       },
     ],
