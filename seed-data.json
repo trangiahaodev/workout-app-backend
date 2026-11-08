@@ -1,0 +1,548 @@
+{
+  "profiles": [
+    {
+      "_id": "670c1a111111111111111101",
+      "userId": "user_2test1234567890abcdef",
+      "goal": "Tăng cơ",
+      "level": "Beginner",
+      "trainingDaysPerWeek": 4,
+      "createdAt": "2026-09-01T00:00:00.000Z",
+      "updatedAt": "2026-10-01T00:00:00.000Z"
+    },
+    {
+      "_id": "670c1a111111111111111102",
+      "userId": "user_sinhvien_iuh_cntt01",
+      "goal": "Giảm mỡ",
+      "level": "Intermediate",
+      "trainingDaysPerWeek": 5,
+      "createdAt": "2026-08-15T00:00:00.000Z",
+      "updatedAt": "2026-10-10T00:00:00.000Z"
+    },
+    {
+      "_id": "670c1a111111111111111103",
+      "userId": "user_sinhvien_iuh_cntt02",
+      "goal": "Sức mạnh",
+      "level": "Advanced",
+      "trainingDaysPerWeek": 3,
+      "createdAt": "2026-07-01T00:00:00.000Z",
+      "updatedAt": "2026-10-05T00:00:00.000Z"
+    }
+  ],
+  "exercises": [
+    {
+      "_id": "6abc93738a6b7b585e251481",
+      "name": "Barbell Bench Press",
+      "muscleGroup": "Ngực",
+      "equipmentRequired": "Barbell",
+      "description": "Nằm ghế phẳng đẩy tạ đòn phát triển ngực toàn diện",
+      "createdAt": "2026-09-01T00:00:00.000Z",
+      "updatedAt": "2026-09-01T00:00:00.000Z"
+    },
+    {
+      "_id": "6abc93738a6b7b585e251482",
+      "name": "Incline Dumbbell Press",
+      "muscleGroup": "Ngực",
+      "equipmentRequired": "Dumbbell",
+      "description": "Nằm ghế dốc lên đẩy tạ đơn tập trung cơ ngực trên",
+      "createdAt": "2026-09-01T00:00:00.000Z",
+      "updatedAt": "2026-09-01T00:00:00.000Z"
+    },
+    {
+      "_id": "6abc93738a6b7b585e251483",
+      "name": "Pec Deck Fly",
+      "muscleGroup": "Ngực",
+      "equipmentRequired": "Machine",
+      "description": "Ngồi ép ngực trên máy bướm tạo độ nét rãnh ngực",
+      "createdAt": "2026-09-01T00:00:00.000Z",
+      "updatedAt": "2026-09-01T00:00:00.000Z"
+    },
+    {
+      "_id": "6abc93738a6b7b585e251484",
+      "name": "Cable Crossover",
+      "muscleGroup": "Ngực",
+      "equipmentRequired": "Cable Machine",
+      "description": "Kéo cáp chéo từ trên xuống siết cơ ngực dưới",
+      "createdAt": "2026-09-01T00:00:00.000Z",
+      "updatedAt": "2026-09-01T00:00:00.000Z"
+    },
+    {
+      "_id": "6abc93738a6b7b585e251485",
+      "name": "Lat Pulldown",
+      "muscleGroup": "Lưng",
+      "equipmentRequired": "Cable Machine",
+      "description": "Kéo cáp rộng tay trên máy phát triển độ rộng lưng xô",
+      "createdAt": "2026-09-01T00:00:00.000Z",
+      "updatedAt": "2026-09-01T00:00:00.000Z"
+    },
+    {
+      "_id": "6abc93738a6b7b585e251486",
+      "name": "Seated Cable Row",
+      "muscleGroup": "Lưng",
+      "equipmentRequired": "Cable Machine",
+      "description": "Ngồi kéo cáp hẹp tay phát triển độ dày lưng giữa",
+      "createdAt": "2026-09-01T00:00:00.000Z",
+      "updatedAt": "2026-09-01T00:00:00.000Z"
+    },
+    {
+      "_id": "6abc93738a6b7b585e251487",
+      "name": "Conventional Deadlift",
+      "muscleGroup": "Lưng",
+      "equipmentRequired": "Barbell",
+      "description": "Kéo tạ đòn phát triển toàn bộ chuỗi cơ lưng và thân sau",
+      "createdAt": "2026-09-01T00:00:00.000Z",
+      "updatedAt": "2026-09-01T00:00:00.000Z"
+    },
+    {
+      "_id": "6abc93738a6b7b585e251488",
+      "name": "Dumbbell One-Arm Row",
+      "muscleGroup": "Lưng",
+      "equipmentRequired": "Dumbbell",
+      "description": "Chống gối kéo tạ đơn một bên cô lập từng bên xô",
+      "createdAt": "2026-09-01T00:00:00.000Z",
+      "updatedAt": "2026-09-01T00:00:00.000Z"
+    },
+    {
+      "_id": "6abc93738a6b7b585e251489",
+      "name": "Barbell Back Squat",
+      "muscleGroup": "Chân",
+      "equipmentRequired": "Barbell",
+      "description": "Gánh tạ đòn phát triển cơ đùi trước, đùi sau và mông",
+      "createdAt": "2026-09-01T00:00:00.000Z",
+      "updatedAt": "2026-09-01T00:00:00.000Z"
+    },
+    {
+      "_id": "6abc93738a6b7b585e251490",
+      "name": "Leg Press",
+      "muscleGroup": "Chân",
+      "equipmentRequired": "Machine",
+      "description": "Đạp đùi trên máy 45 độ, an toàn cho cột sống người mới",
+      "createdAt": "2026-09-01T00:00:00.000Z",
+      "updatedAt": "2026-09-01T00:00:00.000Z"
+    },
+    {
+      "_id": "6abc93738a6b7b585e251491",
+      "name": "Leg Extension",
+      "muscleGroup": "Chân",
+      "equipmentRequired": "Machine",
+      "description": "Ngồi đá đùi trên máy cô lập cơ đùi trước",
+      "createdAt": "2026-09-01T00:00:00.000Z",
+      "updatedAt": "2026-09-01T00:00:00.000Z"
+    },
+    {
+      "_id": "6abc93738a6b7b585e251492",
+      "name": "Seated Leg Curl",
+      "muscleGroup": "Chân",
+      "equipmentRequired": "Machine",
+      "description": "Ngồi móc đùi sau trên máy cô lập nhóm cơ gân kheo",
+      "createdAt": "2026-09-01T00:00:00.000Z",
+      "updatedAt": "2026-09-01T00:00:00.000Z"
+    },
+    {
+      "_id": "6abc93738a6b7b585e251493",
+      "name": "Standing Calf Raise",
+      "muscleGroup": "Chân",
+      "equipmentRequired": "Machine",
+      "description": "Đứng nhón bắp chân với máy phát triển cơ bắp chuối",
+      "createdAt": "2026-09-01T00:00:00.000Z",
+      "updatedAt": "2026-09-01T00:00:00.000Z"
+    },
+    {
+      "_id": "6abc93738a6b7b585e251494",
+      "name": "Dumbbell Shoulder Press",
+      "muscleGroup": "Vai",
+      "equipmentRequired": "Dumbbell",
+      "description": "Ngồi ghế đẩy tạ đơn qua đầu phát triển cơ vai trước và giữa",
+      "createdAt": "2026-09-01T00:00:00.000Z",
+      "updatedAt": "2026-09-01T00:00:00.000Z"
+    },
+    {
+      "_id": "6abc93738a6b7b585e251495",
+      "name": "Dumbbell Lateral Raise",
+      "muscleGroup": "Vai",
+      "equipmentRequired": "Dumbbell",
+      "description": "Đứng dang tạ đơn sang hai bên tạo độ rộng bờ vai chữ V",
+      "createdAt": "2026-09-01T00:00:00.000Z",
+      "updatedAt": "2026-09-01T00:00:00.000Z"
+    },
+    {
+      "_id": "6abc93738a6b7b585e251496",
+      "name": "Face Pull",
+      "muscleGroup": "Vai",
+      "equipmentRequired": "Cable Machine",
+      "description": "Kéo cáp ngang mặt củng cố vai sau và chống gù lưng",
+      "createdAt": "2026-09-01T00:00:00.000Z",
+      "updatedAt": "2026-09-01T00:00:00.000Z"
+    },
+    {
+      "_id": "6abc93738a6b7b585e251497",
+      "name": "Dumbbell Bicep Curl",
+      "muscleGroup": "Tay trước",
+      "equipmentRequired": "Dumbbell",
+      "description": "Đứng cuốn tạ đơn phát triển bắp tay trước săn chắc",
+      "createdAt": "2026-09-01T00:00:00.000Z",
+      "updatedAt": "2026-09-01T00:00:00.000Z"
+    },
+    {
+      "_id": "6abc93738a6b7b585e251498",
+      "name": "Hammer Curl",
+      "muscleGroup": "Tay trước",
+      "equipmentRequired": "Dumbbell",
+      "description": "Cuốn tạ đơn tư thế búa dày bắp tay ngoài và cẳng tay",
+      "createdAt": "2026-09-01T00:00:00.000Z",
+      "updatedAt": "2026-09-01T00:00:00.000Z"
+    },
+    {
+      "_id": "6abc93738a6b7b585e251499",
+      "name": "Tricep Rope Pushdown",
+      "muscleGroup": "Tay sau",
+      "equipmentRequired": "Cable Machine",
+      "description": "Đứng nhấn dây cáp xuống siết chặt cơ bắp tay sau",
+      "createdAt": "2026-09-01T00:00:00.000Z",
+      "updatedAt": "2026-09-01T00:00:00.000Z"
+    },
+    {
+      "_id": "6abc93738a6b7b585e251500",
+      "name": "Skull Crusher",
+      "muscleGroup": "Tay sau",
+      "equipmentRequired": "Barbell",
+      "description": "Nằm hạ thanh tạ đòn qua trán phát triển cơ đầu dài tay sau",
+      "createdAt": "2026-09-01T00:00:00.000Z",
+      "updatedAt": "2026-09-01T00:00:00.000Z"
+    },
+    {
+      "_id": "6abc93738a6b7b585e251501",
+      "name": "Cable Crunch",
+      "muscleGroup": "Bụng",
+      "equipmentRequired": "Cable Machine",
+      "description": "Quỳ gập bụng với dây cáp phát triển cơ bụng 6 múi có tải",
+      "createdAt": "2026-09-01T00:00:00.000Z",
+      "updatedAt": "2026-09-01T00:00:00.000Z"
+    },
+    {
+      "_id": "6abc93738a6b7b585e251502",
+      "name": "Hanging Knee Raise",
+      "muscleGroup": "Bụng",
+      "equipmentRequired": "Bodyweight",
+      "description": "Treo người co gối lên cao phát triển cơ bụng dưới",
+      "createdAt": "2026-09-01T00:00:00.000Z",
+      "updatedAt": "2026-09-01T00:00:00.000Z"
+    },
+    {
+      "_id": "6abc93738a6b7b585e251503",
+      "name": "Barbell Romanian Deadlift",
+      "muscleGroup": "Toàn thân",
+      "equipmentRequired": "Barbell",
+      "description": "Gập hông tạ đòn tăng cường chuỗi cơ sau và thắt lưng",
+      "createdAt": "2026-09-01T00:00:00.000Z",
+      "updatedAt": "2026-09-01T00:00:00.000Z"
+    },
+    {
+      "_id": "6abc93738a6b7b585e251504",
+      "name": "Kettlebell Swing",
+      "muscleGroup": "Toàn thân",
+      "equipmentRequired": "Kettlebell",
+      "description": "Vung tạ ấm phát lực hông đốt mỡ và tăng sức mạnh bộc phát",
+      "createdAt": "2026-09-01T00:00:00.000Z",
+      "updatedAt": "2026-09-01T00:00:00.000Z"
+    }
+  ],
+  "plans": [
+    {
+      "_id": "670c1a222222222222222201",
+      "profileId": "670c1a111111111111111101",
+      "name": "Upper / Lower Strength (4 Buổi)",
+      "generatedByAI": true,
+      "status": "active",
+      "startDate": "2026-10-01T00:00:00.000Z",
+      "endDate": "2026-11-01T00:00:00.000Z",
+      "createdAt": "2026-10-01T00:00:00.000Z",
+      "updatedAt": "2026-10-01T00:00:00.000Z"
+    },
+    {
+      "_id": "670c1a222222222222222202",
+      "profileId": "670c1a111111111111111101",
+      "name": "Push - Pull - Legs Sinh Viên",
+      "generatedByAI": false,
+      "status": "active",
+      "startDate": "2026-10-05T00:00:00.000Z",
+      "endDate": "2026-11-05T00:00:00.000Z",
+      "createdAt": "2026-10-05T00:00:00.000Z",
+      "updatedAt": "2026-10-05T00:00:00.000Z"
+    },
+    {
+      "_id": "670c1a222222222222222203",
+      "profileId": "670c1a111111111111111101",
+      "name": "Full Body Khởi Động Nhẹ",
+      "generatedByAI": false,
+      "status": "completed",
+      "startDate": "2026-09-01T00:00:00.000Z",
+      "endDate": "2026-09-30T00:00:00.000Z",
+      "createdAt": "2026-09-01T00:00:00.000Z",
+      "updatedAt": "2026-09-30T00:00:00.000Z"
+    },
+    {
+      "_id": "670c1a222222222222222204",
+      "profileId": "670c1a111111111111111102",
+      "name": "Fat Burn High Intensity (5 Buổi)",
+      "generatedByAI": true,
+      "status": "active",
+      "startDate": "2026-10-01T00:00:00.000Z",
+      "endDate": "2026-11-15T00:00:00.000Z",
+      "createdAt": "2026-10-01T00:00:00.000Z",
+      "updatedAt": "2026-10-01T00:00:00.000Z"
+    },
+    {
+      "_id": "670c1a222222222222222205",
+      "profileId": "670c1a111111111111111103",
+      "name": "Powerlifting 5x5 Căn Bản",
+      "generatedByAI": false,
+      "status": "abandoned",
+      "startDate": "2026-08-01T00:00:00.000Z",
+      "endDate": "2026-09-01T00:00:00.000Z",
+      "createdAt": "2026-08-01T00:00:00.000Z",
+      "updatedAt": "2026-08-20T00:00:00.000Z"
+    }
+  ],
+  "sessions": [
+    {
+      "_id": "670c1a333333333333333301",
+      "planId": "670c1a222222222222222201",
+      "name": "Thân Trên Sức Mạnh (Upper A)",
+      "scheduledDate": "2026-10-05T08:00:00.000Z",
+      "completedDate": "2026-10-05T09:15:00.000Z",
+      "status": "completed",
+      "createdAt": "2026-10-01T00:00:00.000Z",
+      "updatedAt": "2026-10-05T09:15:00.000Z"
+    },
+    {
+      "_id": "670c1a333333333333333302",
+      "planId": "670c1a222222222222222201",
+      "name": "Thân Dưới & Bụng (Lower A)",
+      "scheduledDate": "2026-10-07T08:00:00.000Z",
+      "completedDate": "2026-10-07T09:20:00.000Z",
+      "status": "completed",
+      "createdAt": "2026-10-01T00:00:00.000Z",
+      "updatedAt": "2026-10-07T09:20:00.000Z"
+    },
+    {
+      "_id": "670c1a333333333333333303",
+      "planId": "670c1a222222222222222201",
+      "name": "Thân Trên Phì Đại (Upper B)",
+      "scheduledDate": "2026-10-09T08:00:00.000Z",
+      "completedDate": "2026-10-09T09:10:00.000Z",
+      "status": "completed",
+      "createdAt": "2026-10-01T00:00:00.000Z",
+      "updatedAt": "2026-10-09T09:10:00.000Z"
+    },
+    {
+      "_id": "670c1a333333333333333304",
+      "planId": "670c1a222222222222222201",
+      "name": "Thân Dưới Phục Hồi (Lower B)",
+      "scheduledDate": "2026-10-12T08:00:00.000Z",
+      "completedDate": null,
+      "status": "skipped",
+      "createdAt": "2026-10-01T00:00:00.000Z",
+      "updatedAt": "2026-10-12T10:00:00.000Z"
+    },
+    {
+      "_id": "670c1a333333333333333305",
+      "planId": "670c1a222222222222222201",
+      "name": "Ngực - Vai - Tay Sau (Push Day)",
+      "scheduledDate": "2026-10-14T08:00:00.000Z",
+      "completedDate": null,
+      "status": "pending",
+      "createdAt": "2026-10-01T00:00:00.000Z",
+      "updatedAt": "2026-10-01T00:00:00.000Z"
+    },
+    {
+      "_id": "670c1a333333333333333306",
+      "planId": "670c1a222222222222222201",
+      "name": "Lưng - Tay Trước (Pull Day)",
+      "scheduledDate": "2026-10-16T08:00:00.000Z",
+      "completedDate": null,
+      "status": "pending",
+      "createdAt": "2026-10-01T00:00:00.000Z",
+      "updatedAt": "2026-10-01T00:00:00.000Z"
+    },
+    {
+      "_id": "670c1a333333333333333307",
+      "planId": "670c1a222222222222222202",
+      "name": "Đẩy Ngực & Vai Khởi Động",
+      "scheduledDate": "2026-10-15T08:00:00.000Z",
+      "completedDate": null,
+      "status": "pending",
+      "createdAt": "2026-10-05T00:00:00.000Z",
+      "updatedAt": "2026-10-05T00:00:00.000Z"
+    },
+    {
+      "_id": "670c1a333333333333333308",
+      "planId": "670c1a222222222222222203",
+      "name": "Full Body Nhập Môn Buổi 1",
+      "scheduledDate": "2026-09-05T08:00:00.000Z",
+      "completedDate": "2026-09-05T09:00:00.000Z",
+      "status": "completed",
+      "createdAt": "2026-09-01T00:00:00.000Z",
+      "updatedAt": "2026-09-05T09:00:00.000Z"
+    }
+  ],
+  "logs": [
+    {
+      "_id": "670c1a444444444444444401",
+      "sessionId": "670c1a333333333333333301",
+      "exerciseId": "6abc93738a6b7b585e251481",
+      "sets": [
+        { "setId": "set_1", "reps": 12, "weight": 30, "isCompleted": true },
+        { "setId": "set_2", "reps": 10, "weight": 35, "isCompleted": true },
+        { "setId": "set_3", "reps": 8, "weight": 40, "isCompleted": true },
+        { "setId": "set_4", "reps": 6, "weight": 42.5, "isCompleted": true }
+      ],
+      "notes": "Đẩy ngực tạ đòn khởi động tốt, mức 42.5kg giữ form chuẩn",
+      "progressPhotoUrl": "https://images.unsplash.com/photo-1581009146145-b5ef050c2e1e?auto=format&fit=crop&w=500&q=80",
+      "createdAt": "2026-10-05T08:15:00.000Z",
+      "updatedAt": "2026-10-05T08:15:00.000Z"
+    },
+    {
+      "_id": "670c1a444444444444444402",
+      "sessionId": "670c1a333333333333333301",
+      "exerciseId": "6abc93738a6b7b585e251485",
+      "sets": [
+        { "setId": "set_1", "reps": 12, "weight": 35, "isCompleted": true },
+        { "setId": "set_2", "reps": 10, "weight": 40, "isCompleted": true },
+        { "setId": "set_3", "reps": 10, "weight": 40, "isCompleted": true }
+      ],
+      "notes": "Kéo xô máy mở ngực đón tạ, lưng xô siết tốt",
+      "createdAt": "2026-10-05T08:35:00.000Z",
+      "updatedAt": "2026-10-05T08:35:00.000Z"
+    },
+    {
+      "_id": "670c1a444444444444444403",
+      "sessionId": "670c1a333333333333333301",
+      "exerciseId": "6abc93738a6b7b585e251494",
+      "sets": [
+        { "setId": "set_1", "reps": 12, "weight": 10, "isCompleted": true },
+        { "setId": "set_2", "reps": 10, "weight": 12, "isCompleted": true },
+        { "setId": "set_3", "reps": 8, "weight": 12, "isCompleted": true }
+      ],
+      "notes": "Đẩy vai tạ đơn ngồi ghế tựa thẳng lưng",
+      "createdAt": "2026-10-05T08:55:00.000Z",
+      "updatedAt": "2026-10-05T08:55:00.000Z"
+    },
+    {
+      "_id": "670c1a444444444444444404",
+      "sessionId": "670c1a333333333333333301",
+      "exerciseId": "6abc93738a6b7b585e251499",
+      "sets": [
+        { "setId": "set_1", "reps": 15, "weight": 15, "isCompleted": true },
+        { "setId": "set_2", "reps": 12, "weight": 17.5, "isCompleted": true },
+        { "setId": "set_3", "reps": 12, "weight": 17.5, "isCompleted": true }
+      ],
+      "notes": "Đẩy tay sau dây cáp siết chặt ở điểm thấp nhất",
+      "createdAt": "2026-10-05T09:10:00.000Z",
+      "updatedAt": "2026-10-05T09:10:00.000Z"
+    },
+    {
+      "_id": "670c1a444444444444444405",
+      "sessionId": "670c1a333333333333333302",
+      "exerciseId": "6abc93738a6b7b585e251489",
+      "sets": [
+        { "setId": "set_1", "reps": 10, "weight": 40, "isCompleted": true },
+        { "setId": "set_2", "reps": 10, "weight": 45, "isCompleted": true },
+        { "setId": "set_3", "reps": 8, "weight": 50, "isCompleted": true }
+      ],
+      "notes": "Squat tạ đòn giữ lưng thẳng, đùi song song mặt sàn",
+      "createdAt": "2026-10-07T08:20:00.000Z",
+      "updatedAt": "2026-10-07T08:20:00.000Z"
+    },
+    {
+      "_id": "670c1a444444444444444406",
+      "sessionId": "670c1a333333333333333302",
+      "exerciseId": "6abc93738a6b7b585e251490",
+      "sets": [
+        { "setId": "set_1", "reps": 15, "weight": 60, "isCompleted": true },
+        { "setId": "set_2", "reps": 12, "weight": 80, "isCompleted": true },
+        { "setId": "set_3", "reps": 10, "weight": 90, "isCompleted": true }
+      ],
+      "notes": "Đạp đùi trên máy, không khóa khớp gối ở đỉnh",
+      "createdAt": "2026-10-07T08:45:00.000Z",
+      "updatedAt": "2026-10-07T08:45:00.000Z"
+    },
+    {
+      "_id": "670c1a444444444444444407",
+      "sessionId": "670c1a333333333333333302",
+      "exerciseId": "6abc93738a6b7b585e251501",
+      "sets": [
+        { "setId": "set_1", "reps": 15, "weight": 20, "isCompleted": true },
+        { "setId": "set_2", "reps": 15, "weight": 25, "isCompleted": true },
+        { "setId": "set_3", "reps": 12, "weight": 25, "isCompleted": true }
+      ],
+      "notes": "Gập bụng dây cáp gồng chặt cơ bụng khi cuộn người",
+      "createdAt": "2026-10-07T09:10:00.000Z",
+      "updatedAt": "2026-10-07T09:10:00.000Z"
+    },
+    {
+      "_id": "670c1a444444444444444408",
+      "sessionId": "670c1a333333333333333303",
+      "exerciseId": "6abc93738a6b7b585e251482",
+      "sets": [
+        { "setId": "set_1", "reps": 12, "weight": 14, "isCompleted": true },
+        { "setId": "set_2", "reps": 10, "weight": 16, "isCompleted": true },
+        { "setId": "set_3", "reps": 10, "weight": 16, "isCompleted": true }
+      ],
+      "notes": "Đẩy ngực trên tạ đơn mở rộng lồng ngực",
+      "createdAt": "2026-10-09T08:20:00.000Z",
+      "updatedAt": "2026-10-09T08:20:00.000Z"
+    },
+    {
+      "_id": "670c1a444444444444444409",
+      "sessionId": "670c1a333333333333333303",
+      "exerciseId": "6abc93738a6b7b585e251486",
+      "sets": [
+        { "setId": "set_1", "reps": 12, "weight": 35, "isCompleted": true },
+        { "setId": "set_2", "reps": 10, "weight": 40, "isCompleted": true },
+        { "setId": "set_3", "reps": 10, "weight": 40, "isCompleted": true }
+      ],
+      "notes": "Ngồi kéo cáp lưng thẳng siết cơ lưng giữa",
+      "createdAt": "2026-10-09T08:45:00.000Z",
+      "updatedAt": "2026-10-09T08:45:00.000Z"
+    },
+    {
+      "_id": "670c1a444444444444444410",
+      "sessionId": "670c1a333333333333333303",
+      "exerciseId": "6abc93738a6b7b585e251497",
+      "sets": [
+        { "setId": "set_1", "reps": 12, "weight": 8, "isCompleted": true },
+        { "setId": "set_2", "reps": 10, "weight": 10, "isCompleted": true },
+        { "setId": "set_3", "reps": 8, "weight": 10, "isCompleted": true }
+      ],
+      "notes": "Cuốn tạ tay trước đứng thẳng, không đung đưa lưng",
+      "createdAt": "2026-10-09T09:05:00.000Z",
+      "updatedAt": "2026-10-09T09:05:00.000Z"
+    },
+    {
+      "_id": "670c1a444444444444444411",
+      "sessionId": "670c1a333333333333333308",
+      "exerciseId": "6abc93738a6b7b585e251481",
+      "sets": [
+        { "setId": "set_1", "reps": 10, "weight": 20, "isCompleted": true },
+        { "setId": "set_2", "reps": 10, "weight": 25, "isCompleted": true },
+        { "setId": "set_3", "reps": 8, "weight": 25, "isCompleted": true }
+      ],
+      "notes": "Buổi đầu làm quen tạ đòn với mức tạ nhẹ",
+      "createdAt": "2026-09-05T08:20:00.000Z",
+      "updatedAt": "2026-09-05T08:20:00.000Z"
+    },
+    {
+      "_id": "670c1a444444444444444412",
+      "sessionId": "670c1a333333333333333308",
+      "exerciseId": "6abc93738a6b7b585e251489",
+      "sets": [
+        { "setId": "set_1", "reps": 12, "weight": 20, "isCompleted": true },
+        { "setId": "set_2", "reps": 10, "weight": 25, "isCompleted": true },
+        { "setId": "set_3", "reps": 10, "weight": 25, "isCompleted": true }
+      ],
+      "notes": "Tập squat căn bản chỉnh tư thế đầu gối",
+      "createdAt": "2026-09-05T08:45:00.000Z",
+      "updatedAt": "2026-09-05T08:45:00.000Z"
+    }
+  ]
+}

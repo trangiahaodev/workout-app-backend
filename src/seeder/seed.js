@@ -1,47 +1,79 @@
 // src/seeder/seed.js
+import fs from "fs";
+import path from "path";
+import { fileURLToPath } from "url";
 import mongoose from "mongoose";
 import dotenv from "dotenv";
 import Exercise from "../models/Exercise.js";
+import Profile from "../models/Profile.js";
+import WorkoutPlan from "../models/WorkoutPlan.js";
+import WorkoutSession from "../models/WorkoutSession.js";
+import WorkoutLog from "../models/WorkoutLog.js";
 
 dotenv.config();
 
-const exercises = [
-  {
-    name: "Barbell Bench Press",
-    muscleGroup: "Ngực",
-    equipmentRequired: "Barbell",
-  },
-  { name: "Squat", muscleGroup: "Chân", equipmentRequired: "Barbell" },
-  { name: "Deadlift", muscleGroup: "Lưng", equipmentRequired: "Barbell" },
-  { name: "Pull-up", muscleGroup: "Lưng", equipmentRequired: "Bodyweight" },
-  { name: "Push-up", muscleGroup: "Ngực", equipmentRequired: "Bodyweight" },
-  {
-    name: "Muscle-up",
-    muscleGroup: "Toàn thân",
-    equipmentRequired: "Bodyweight",
-  },
-  {
-    name: "Dumbbell Curl",
-    muscleGroup: "Tay trước",
-    equipmentRequired: "Dumbbell",
-  },
-];
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = path.dirname(__filename);
 
-const seedData = async () => {
+// Tìm đường dẫn tới seed-data.json ở thư mục gốc của dự án
+const rootSeedPath = path.resolve(__dirname, "../../../seed-data.json");
+
+const seedDatabase = async () => {
   try {
+    if (!process.env.MONGO_URI) {
+      throw new Error("MONGO_URI chưa được cấu hình trong .env");
+    }
+
     await mongoose.connect(process.env.MONGO_URI);
-    console.log("Đang xóa dữ liệu cũ...");
-    await Exercise.deleteMany();
+    console.log("Đã kết nối MongoDB thành công!");
 
-    console.log("Đang đổ dữ liệu Bài tập mới...");
-    await Exercise.insertMany(exercises);
+    if (!fs.existsSync(rootSeedPath)) {
+      throw new Error(`Không tìm thấy file seed-data.json tại: ${rootSeedPath}`);
+    }
 
-    console.log("Seed dữ liệu thành công!");
-    process.exit();
+    const rawData = fs.readFileSync(rootSeedPath, "utf-8");
+    const data = JSON.parse(rawData);
+
+    console.log("Đang làm sạch dữ liệu cũ trong 5 collections...");
+    await Promise.all([
+      Profile.deleteMany({}),
+      Exercise.deleteMany({}),
+      WorkoutPlan.deleteMany({}),
+      WorkoutSession.deleteMany({}),
+      WorkoutLog.deleteMany({}),
+    ]);
+
+    console.log("Đang nạp dữ liệu Profile...");
+    if (data.profiles?.length) {
+      await Profile.insertMany(data.profiles);
+    }
+
+    console.log("Đang nạp dữ liệu Bài tập (Exercise)...");
+    if (data.exercises?.length) {
+      await Exercise.insertMany(data.exercises);
+    }
+
+    console.log("Đang nạp dữ liệu Lịch trình (WorkoutPlan)...");
+    if (data.plans?.length) {
+      await WorkoutPlan.insertMany(data.plans);
+    }
+
+    console.log("Đang nạp dữ liệu Buổi tập (WorkoutSession)...");
+    if (data.sessions?.length) {
+      await WorkoutSession.insertMany(data.sessions);
+    }
+
+    console.log("Đang nạp dữ liệu Nhật ký tập (WorkoutLog)...");
+    if (data.logs?.length) {
+      await WorkoutLog.insertMany(data.logs);
+    }
+
+    console.log("Seed toàn bộ 5 collections thành công!");
+    process.exit(0);
   } catch (error) {
     console.error(`Lỗi seed data: ${error.message}`);
     process.exit(1);
   }
 };
 
-seedData();
+seedDatabase();

@@ -59,5 +59,6 @@ router.get("/:userId", getProfile);
  *         description: Cập nhật hoặc tạo thành công
  */
 router.post("/", upsertProfile);
+router.put("/", upsertProfile);
 
 export default router;
