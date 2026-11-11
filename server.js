@@ -9,6 +9,7 @@ import profileRoutes from "./src/routes/profileRoutes.js";
 import planRoutes from "./src/routes/planRoutes.js";
 import sessionRoutes from "./src/routes/sessionRoutes.js";
 import logRoutes from "./src/routes/logRoutes.js";
+import authRoutes from "./src/routes/authRoutes.js";
 
 dotenv.config();
 connectDB();
@@ -48,6 +49,7 @@ app.use("/api/v1/profiles", profileRoutes);
 app.use("/api/v1/plans", planRoutes);
 app.use("/api/v1/sessions", sessionRoutes);
 app.use("/api/v1/logs", logRoutes);
+app.use("/api/v1/auth", authRoutes);
 
 const PORT = process.env.PORT || 5000;
 app.listen(PORT, () => {

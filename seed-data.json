@@ -220,10 +220,10 @@
     },
     {
       "_id": "6abc93738a6b7b585e251502",
-      "name": "Hanging Knee Raise",
+      "name": "Abdominal Crunch Machine",
       "muscleGroup": "Bụng",
-      "equipmentRequired": "Bodyweight",
-      "description": "Treo người co gối lên cao phát triển cơ bụng dưới",
+      "equipmentRequired": "Machine",
+      "description": "Ngồi gập bụng với máy tạ kháng lực phát triển cơ bụng nét và an toàn",
       "createdAt": "2026-09-01T00:00:00.000Z",
       "updatedAt": "2026-09-01T00:00:00.000Z"
     },
@@ -543,6 +543,22 @@
       "notes": "Tập squat căn bản chỉnh tư thế đầu gối",
       "createdAt": "2026-09-05T08:45:00.000Z",
       "updatedAt": "2026-09-05T08:45:00.000Z"
+    }
+  ],
+  "users": [
+    {
+      "_id": "670c1a000000000000000001",
+      "email": "johndoe@gym.com",
+      "password": "$2a$10$wE99N9kM8g1bVj9w7Qv2g.mQ.z5eJjK11KqI.Qz20zJzU6a2tqf2S",
+      "fullName": "John Doe",
+      "userId": "user_2test1234567890abcdef"
+    },
+    {
+      "_id": "670c1a000000000000000002",
+      "email": "samwalter@gym.com",
+      "password": "$2a$10$wE99N9kM8g1bVj9w7Qv2g.mQ.z5eJjK11KqI.Qz20zJzU6a2tqf2S",
+      "fullName": "Sam Walter",
+      "userId": "user_sinhvien_iuh_cntt01"
     }
   ]
 }

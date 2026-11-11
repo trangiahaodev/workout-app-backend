@@ -7,6 +7,7 @@ import { fileURLToPath } from "url";
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 
+import User from "./src/models/User.js";
 import Profile from "./src/models/Profile.js";
 import Exercise from "./src/models/Exercise.js";
 import WorkoutPlan from "./src/models/WorkoutPlan.js";
@@ -33,6 +34,7 @@ async function runSeed() {
 
     console.log("Đang làm sạch dữ liệu cũ...");
     await Promise.all([
+      User.deleteMany({}),
       Profile.deleteMany({}),
       Exercise.deleteMany({}),
       WorkoutPlan.deleteMany({}),
@@ -41,6 +43,7 @@ async function runSeed() {
     ]);
 
     console.log("Đang nạp dữ liệu chuẩn hóa từ Frontend...");
+    if (data.users?.length) await User.insertMany(data.users);
     if (data.profiles?.length) await Profile.insertMany(data.profiles);
     if (data.exercises?.length) await Exercise.insertMany(data.exercises);
     if (data.plans?.length) await WorkoutPlan.insertMany(data.plans);
@@ -49,6 +52,7 @@ async function runSeed() {
 
     console.log("--------------------------------------------------");
     console.log(`Đã nạp thành công:`);
+    console.log(`- Users:     ${data.users?.length || 0}`);
     console.log(`- Profiles:  ${data.profiles?.length || 0}`);
     console.log(`- Exercises: ${data.exercises?.length || 0}`);
     console.log(`- Plans:     ${data.plans?.length || 0}`);
