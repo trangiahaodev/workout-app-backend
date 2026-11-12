@@ -1,5 +1,9 @@
 import express from "express";
-import { getLogsBySession, saveLog } from "../controllers/logController.js";
+import {
+  getLogsBySession,
+  saveLog,
+  getLogsByExercise,
+} from "../controllers/logController.js";
 
 const router = express.Router();
 
