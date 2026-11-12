@@ -65,4 +65,25 @@ router.get("/session/:sessionId", getLogsBySession);
  */
 router.post("/", saveLog);
 
+/**
+ * @swagger
+ * /api/v1/logs/exercise/{exerciseId}:
+ *   get:
+ *     summary: Lấy lịch sử tập luyện của một bài tập cụ thể
+ *     tags: [Workout Logs]
+ *     parameters:
+ *       - in: path
+ *         name: exerciseId
+ *         schema:
+ *           type: string
+ *         required: true
+ *         description: ID của Exercise (24-hex ObjectId)
+ *     responses:
+ *       200:
+ *         description: Danh sách các bản ghi nhật ký của bài tập được sắp xếp mới nhất trước
+ *       500:
+ *         description: Lỗi server
+ */
+router.get("/exercise/:exerciseId", getLogsByExercise);
+
 export default router;
