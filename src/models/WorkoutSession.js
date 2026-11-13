@@ -7,7 +7,13 @@ const workoutSessionSchema = new mongoose.Schema(
       ref: "WorkoutPlan",
       required: true,
     },
-    name: { type: String, required: true }, // VD: "Ngực - Tay sau"
+    name: { type: String, required: true },
+    exercises: [
+      {
+        type: mongoose.Schema.Types.ObjectId,
+        ref: "Exercise",
+      },
+    ],
     scheduledDate: { type: Date, required: true },
     completedDate: { type: Date },
     status: {

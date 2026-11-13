@@ -673,6 +673,12 @@
       "_id": "670c1a333333333333333301",
       "planId": "670c1a222222222222222201",
       "name": "Upper A - Chest & Back Focus",
+      "exercises": [
+        "6abc93738a6b7b585e251481",
+        "6abc93738a6b7b585e251485",
+        "6abc93738a6b7b585e251494",
+        "6abc93738a6b7b585e251499"
+      ],
       "scheduledDate": "2026-11-06T08:00:00.000Z",
       "completedDate": "2026-11-06T09:15:00.000Z",
       "status": "completed",
@@ -683,6 +689,12 @@
       "_id": "670c1a333333333333333302",
       "planId": "670c1a222222222222222201",
       "name": "Lower A - Quads & Core",
+      "exercises": [
+        "6abc93738a6b7b585e251489",
+        "6abc93738a6b7b585e251490",
+        "6abc93738a6b7b585e251491",
+        "6abc93738a6b7b585e251501"
+      ],
       "scheduledDate": "2026-11-08T08:00:00.000Z",
       "completedDate": "2026-11-08T09:20:00.000Z",
       "status": "completed",
@@ -693,6 +705,12 @@
       "_id": "670c1a333333333333333303",
       "planId": "670c1a222222222222222201",
       "name": "Upper B - Shoulders & Arms",
+      "exercises": [
+        "6abc93738a6b7b585e251482",
+        "6abc93738a6b7b585e251486",
+        "6abc93738a6b7b585e251495",
+        "6abc93738a6b7b585e251497"
+      ],
       "scheduledDate": "2026-11-10T08:00:00.000Z",
       "completedDate": "2026-11-10T09:10:00.000Z",
       "status": "completed",
@@ -703,6 +721,12 @@
       "_id": "670c1a333333333333333305",
       "planId": "670c1a222222222222222201",
       "name": "Lower B - Hamstrings & Calves",
+      "exercises": [
+        "6abc93738a6b7b585e251503",
+        "6abc93738a6b7b585e251492",
+        "6abc93738a6b7b585e251493",
+        "6abc93738a6b7b585e251502"
+      ],
       "scheduledDate": "2026-11-13T08:00:00.000Z",
       "completedDate": null,
       "status": "pending",
@@ -713,6 +737,12 @@
       "_id": "670c1a333333333333333306",
       "planId": "670c1a222222222222222202",
       "name": "Push Day - Chest, Shoulders & Triceps",
+      "exercises": [
+        "6abc93738a6b7b585e251481",
+        "6abc93738a6b7b585e251482",
+        "6abc93738a6b7b585e251495",
+        "6abc93738a6b7b585e251499"
+      ],
       "scheduledDate": "2026-11-14T08:00:00.000Z",
       "completedDate": null,
       "status": "pending",
@@ -723,6 +753,12 @@
       "_id": "670c1a333333333333333307",
       "planId": "670c1a222222222222222202",
       "name": "Pull Day - Back & Biceps",
+      "exercises": [
+        "6abc93738a6b7b585e251485",
+        "6abc93738a6b7b585e251486",
+        "6abc93738a6b7b585e251496",
+        "6abc93738a6b7b585e251498"
+      ],
       "scheduledDate": "2026-11-16T08:00:00.000Z",
       "completedDate": null,
       "status": "pending",
@@ -733,6 +769,11 @@
       "_id": "670c1a333333333333333308",
       "planId": "670c1a222222222222222203",
       "name": "Full Body - Foundation",
+      "exercises": [
+        "6abc93738a6b7b585e251481",
+        "6abc93738a6b7b585e251489",
+        "6abc93738a6b7b585e251485"
+      ],
       "scheduledDate": "2026-10-05T08:00:00.000Z",
       "completedDate": "2026-10-05T09:00:00.000Z",
       "status": "completed",
@@ -743,6 +784,12 @@
       "_id": "670c1a333333333333333309",
       "planId": "670c1a222222222222222204",
       "name": "Metabolic Circuit A - Full Body",
+      "exercises": [
+        "6abc93738a6b7b585e251504",
+        "6abc93738a6b7b585e251490",
+        "6abc93738a6b7b585e251488",
+        "6abc93738a6b7b585e251501"
+      ],
       "scheduledDate": "2026-11-13T08:00:00.000Z",
       "completedDate": null,
       "status": "pending",
@@ -753,6 +800,12 @@
       "_id": "670c1a333333333333333310",
       "planId": "670c1a222222222222222204",
       "name": "Lower Body & Core Shred",
+      "exercises": [
+        "6abc93738a6b7b585e251489",
+        "6abc93738a6b7b585e251492",
+        "6abc93738a6b7b585e251501",
+        "6abc93738a6b7b585e251502"
+      ],
       "scheduledDate": "2026-11-15T08:00:00.000Z",
       "completedDate": null,
       "status": "pending",
@@ -763,6 +816,12 @@
       "_id": "670c1a333333333333333311",
       "planId": "670c1a222222222222222205",
       "name": "Upper High-Rep Superset",
+      "exercises": [
+        "6abc93738a6b7b585e251484",
+        "6abc93738a6b7b585e251485",
+        "6abc93738a6b7b585e251495",
+        "6abc93738a6b7b585e251500"
+      ],
       "scheduledDate": "2026-11-14T08:00:00.000Z",
       "completedDate": null,
       "status": "pending",
@@ -773,6 +832,11 @@
       "_id": "670c1a333333333333333312",
       "planId": "670c1a222222222222222207",
       "name": "Heavy Squat & Bench Press 5x5",
+      "exercises": [
+        "6abc93738a6b7b585e251489",
+        "6abc93738a6b7b585e251481",
+        "6abc93738a6b7b585e251488"
+      ],
       "scheduledDate": "2026-11-13T08:00:00.000Z",
       "completedDate": null,
       "status": "pending",
@@ -783,6 +847,11 @@
       "_id": "670c1a333333333333333313",
       "planId": "670c1a222222222222222207",
       "name": "Deadlift & Overhead Press 5x5",
+      "exercises": [
+        "6abc93738a6b7b585e251487",
+        "6abc93738a6b7b585e251494",
+        "6abc93738a6b7b585e251486"
+      ],
       "scheduledDate": "2026-11-15T08:00:00.000Z",
       "completedDate": null,
       "status": "pending",
@@ -793,6 +862,11 @@
       "_id": "670c1a333333333333333314",
       "planId": "670c1a222222222222222208",
       "name": "Heavy Lower & Posterior Chain",
+      "exercises": [
+        "6abc93738a6b7b585e251489",
+        "6abc93738a6b7b585e251503",
+        "6abc93738a6b7b585e251493"
+      ],
       "scheduledDate": "2026-11-14T08:00:00.000Z",
       "completedDate": null,
       "status": "pending",
@@ -803,6 +877,12 @@
       "_id": "670c1a333333333333333315",
       "planId": "670c1a222222222222222210",
       "name": "Full Body Balance - Session A",
+      "exercises": [
+        "6abc93738a6b7b585e251482",
+        "6abc93738a6b7b585e251490",
+        "6abc93738a6b7b585e251485",
+        "6abc93738a6b7b585e251502"
+      ],
       "scheduledDate": "2026-11-13T08:00:00.000Z",
       "completedDate": null,
       "status": "pending",
@@ -813,6 +893,12 @@
       "_id": "670c1a333333333333333316",
       "planId": "670c1a222222222222222210",
       "name": "Full Body Balance - Session B",
+      "exercises": [
+        "6abc93738a6b7b585e251503",
+        "6abc93738a6b7b585e251494",
+        "6abc93738a6b7b585e251497",
+        "6abc93738a6b7b585e251499"
+      ],
       "scheduledDate": "2026-11-15T08:00:00.000Z",
       "completedDate": null,
       "status": "pending",
@@ -823,6 +909,12 @@
       "_id": "670c1a333333333333333317",
       "planId": "670c1a222222222222222211",
       "name": "Upper Aesthetic & Core Tone",
+      "exercises": [
+        "6abc93738a6b7b585e251483",
+        "6abc93738a6b7b585e251496",
+        "6abc93738a6b7b585e251495",
+        "6abc93738a6b7b585e251501"
+      ],
       "scheduledDate": "2026-11-14T08:00:00.000Z",
       "completedDate": null,
       "status": "pending",
