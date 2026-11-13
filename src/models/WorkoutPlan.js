@@ -7,7 +7,13 @@ const workoutPlanSchema = new mongoose.Schema(
       ref: "Profile",
       required: true,
     },
-    name: { type: String, required: true },
+    name: { type: String, required: true, trim: true },
+    goal: {
+      type: String,
+      enum: ["Tăng cơ", "Giảm mỡ", "Sức mạnh", "Giữ dáng, giữ cân"],
+      default: "Tăng cơ",
+    },
+    coverImage: { type: String, default: "" },
     generatedByAI: { type: Boolean, default: false },
     status: {
       type: String,
