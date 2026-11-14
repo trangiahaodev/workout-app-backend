@@ -24,7 +24,6 @@ export const register = async (req, res) => {
 
     const salt = await bcrypt.genSalt(10);
     const hashedPassword = await bcrypt.hash(password, salt);
-
     const newUserId = `user_${new mongoose.Types.ObjectId().toString()}`;
 
     const user = await User.create({
@@ -32,13 +31,6 @@ export const register = async (req, res) => {
       password: hashedPassword,
       fullName: fullName || "Thành viên mới",
       userId: newUserId,
-    });
-
-    await Profile.create({
-      userId: newUserId,
-      goal: "Tăng cơ",
-      level: "Beginner",
-      trainingDaysPerWeek: 4,
     });
 
     const token = jwt.sign(

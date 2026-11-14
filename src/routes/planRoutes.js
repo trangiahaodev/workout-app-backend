@@ -87,4 +87,6 @@ router.post("/", createPlan);
  */
 router.put("/:id/status", updatePlanStatus);
 
+router.post("/generate", generateRoadmap);
+
 export default router;
