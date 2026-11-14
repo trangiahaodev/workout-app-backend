@@ -2,6 +2,7 @@ import express from "express";
 import {
   getSessionsByPlan,
   createSession,
+  completeSession,
 } from "../controllers/sessionController.js";
 
 const router = express.Router();
@@ -57,5 +58,7 @@ router.get("/plan/:planId", getSessionsByPlan);
  *         description: Tạo thành công
  */
 router.post("/", createSession);
+
+router.put("/:id/complete", completeSession);
 
 export default router;
