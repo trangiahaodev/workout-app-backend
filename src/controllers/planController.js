@@ -15,7 +15,9 @@ const GOAL_COVERS = {
 
 export const getPlansByProfile = async (req, res) => {
   try {
-    const plans = await WorkoutPlan.find({ profileId: req.params.profileId });
+    const plans = await WorkoutPlan.find({
+      profileId: req.params.profileId,
+    }).sort({ createdAt: -1 });
     res.status(200).json(plans);
   } catch (error) {
     res.status(500).json({ message: error.message });
@@ -33,12 +35,25 @@ export const createPlan = async (req, res) => {
 
 export const updatePlanStatus = async (req, res) => {
   try {
-    const plan = await WorkoutPlan.findByIdAndUpdate(
-      req.params.id,
-      { status: req.body.status },
-      { new: true },
-    );
-    res.status(200).json(plan);
+    const targetPlan = await WorkoutPlan.findById(req.params.id);
+    if (!targetPlan) {
+      return res.status(404).json({ message: "Không tìm thấy lộ trình" });
+    }
+
+    if (req.body.status === "active") {
+      await WorkoutPlan.updateMany(
+        {
+          profileId: targetPlan.profileId,
+          status: "active",
+          _id: { $ne: targetPlan._id },
+        },
+        { $set: { status: "abandoned" } },
+      );
+    }
+
+    targetPlan.status = req.body.status;
+    await targetPlan.save();
+    res.status(200).json(targetPlan);
   } catch (error) {
     res.status(400).json({ message: error.message });
   }
@@ -143,7 +158,6 @@ export const generateRoadmap = async (req, res) => {
       });
     }
 
-    // Chuyển các lộ trình đang active trước đó sang abandoned để giữ lịch sử
     await WorkoutPlan.updateMany(
       { profileId, status: "active" },
       { $set: { status: "abandoned" } },
