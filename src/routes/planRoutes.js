@@ -3,6 +3,7 @@ import {
   getPlansByProfile,
   createPlan,
   updatePlanStatus,
+  generateRoadmap,
 } from "../controllers/planController.js";
 
 const router = express.Router();
