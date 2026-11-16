@@ -15,6 +15,8 @@ const workoutPlanSchema = new mongoose.Schema(
     },
     coverImage: { type: String, default: "" },
     generatedByAI: { type: Boolean, default: false },
+    durationWeeks: { type: Number, default: 4 },
+    aiNote: { type: String, default: "" },
     status: {
       type: String,
       enum: ["active", "completed", "abandoned"],

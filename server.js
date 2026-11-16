@@ -10,6 +10,7 @@ import planRoutes from "./src/routes/planRoutes.js";
 import sessionRoutes from "./src/routes/sessionRoutes.js";
 import logRoutes from "./src/routes/logRoutes.js";
 import authRoutes from "./src/routes/authRoutes.js";
+import aiRoutes from "./src/routes/aiRoutes.js";
 
 dotenv.config();
 connectDB();
@@ -50,6 +51,7 @@ app.use("/api/v1/plans", planRoutes);
 app.use("/api/v1/sessions", sessionRoutes);
 app.use("/api/v1/logs", logRoutes);
 app.use("/api/v1/auth", authRoutes);
+app.use("/api/v1/ai", aiRoutes);
 
 const PORT = process.env.PORT || 5000;
 app.listen(PORT, () => {

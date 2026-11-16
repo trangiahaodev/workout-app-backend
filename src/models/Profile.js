@@ -14,6 +14,7 @@ const profileSchema = new mongoose.Schema(
       default: "Beginner",
     },
     trainingDaysPerWeek: { type: Number, default: 3 },
+    customNote: { type: String, default: "", trim: true },
   },
   { timestamps: true },
 );
