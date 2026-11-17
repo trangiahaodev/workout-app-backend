@@ -1,4 +1,4 @@
-const DEFAULT_MODEL = "gemini-3.5-flash-lite";
+const DEFAULT_MODEL = "gemini-2.5-flash";
 
 async function callGemini({
   systemInstruction,
@@ -14,9 +14,16 @@ async function callGemini({
   const model = process.env.GEMINI_MODEL || DEFAULT_MODEL;
   const endpoint = `https://generativelanguage.googleapis.com/v1beta/models/${model}:generateContent?key=${apiKey}`;
 
+  const isGemini25 = model.includes("2.5");
+  const isGemini3 = model.includes("gemini-3");
+
   const generationConfig = {
     temperature,
-    maxOutputTokens: 2048,
+    // Tăng trần token để không bao giờ bị ngắt giữa câu hoặc cắt cụt JSON lộ trình
+    maxOutputTokens: responseSchema ? 8192 : 4096,
+    // Tắt/giảm suy luận ngầm để không ăn vào quỹ token đầu ra & phản hồi nhanh hơn lúc demo
+    ...(isGemini25 ? { thinkingConfig: { thinkingBudget: 0 } } : {}),
+    ...(isGemini3 ? { thinkingConfig: { thinkingLevel: "minimal" } } : {}),
   };
 
   if (responseSchema) {
@@ -36,7 +43,7 @@ async function callGemini({
   }
 
   const controller = new AbortController();
-  const timeoutId = setTimeout(() => controller.abort(), 25000);
+  const timeoutId = setTimeout(() => controller.abort(), 30000);
 
   try {
     const response = await fetch(endpoint, {
@@ -52,9 +59,24 @@ async function callGemini({
     }
 
     const data = await response.json();
-    const rawText = data?.candidates?.[0]?.content?.parts?.[0]?.text;
+    const candidate = data?.candidates?.[0];
+    const parts = candidate?.content?.parts || [];
+
+    // Ghép toàn bộ các phần text hợp lệ (bỏ qua part suy luận ngầm nếu có)
+    const rawText = parts
+      .filter((p) => !p.thought && typeof p.text === "string")
+      .map((p) => p.text)
+      .join("");
+
     if (!rawText) {
       throw new Error("Empty response from Gemini API");
+    }
+
+    if (candidate?.finishReason && candidate.finishReason !== "STOP") {
+      console.warn(
+        `[Gemini] Dừng với finishReason=${candidate.finishReason}:`,
+        rawText,
+      );
     }
 
     return responseSchema ? JSON.parse(rawText) : rawText.trim();
