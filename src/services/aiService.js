@@ -16,6 +16,7 @@ async function callGemini({
 
   const generationConfig = {
     temperature,
+    maxOutputTokens: 2048,
   };
 
   if (responseSchema) {
